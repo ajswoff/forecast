@@ -1,0 +1,253 @@
+<mugl>
+  <background color="0xF7F7F2"/>
+    <legend visible="true" rows="1" border="0" opacity="0" anchor="-1 1" base="-1 1" position="0 25">
+      <icon height="15" width="15"/>
+    </legend>
+    <window margin="0" padding="0" border="1.5" bordercolor="0x000000"/>
+    <plotarea margintop="25" marginleft="38" marginbottom="40" marginright="15"/>
+
+    <horizontalaxis id="Time" length="1" base="-1,-1" anchor="-1" tickmin="-5" tickmax="5" type="datetime">
+    <labels format="%H:%i%L%n%d" spacing="1M 7D 1D 12H 6H 4H 2H 1H 30m 10m 5m" position="0 2"/>
+      <grid color="0xC9C9C1"/>
+      <title anchor="0 1" position="0 -20">Time</title>
+      <binding id="xBinding" min="201304111130" max="201304131130"/>
+    </horizontalaxis>
+
+    <verticalaxis   id="°F"  min="-5" max="105" length="1">
+      <labels format="%.0f" start="0" spacing="100 20 10 5 2 1 0.5 0.2 0.1 0.05 0.02 0.01" anchor="0,0" position="-10,0" angle="0" />
+      <grid color="0xC9C9C1"/>
+      <title angle="90" anchor="0 1" position="-30 0">percent (%)</title>
+    </verticalaxis>
+
+    <plot>
+      <horizontalaxis ref="Time">
+        <variable ref="Time"/>
+      </horizontalaxis>
+      <verticalaxis ref="°F">
+        <variable ref="Sky Cover"/>
+      </verticalaxis>
+      <renderer type="pointline">
+        <option name="linecolor" value="0xC41899"/>
+        <option name="linewidth" value="3"/>
+        <option name="pointshape" value="circle"/>
+        <option name="pointoutlinewidth" value="2"/>
+        <option name="pointoutlinecolor" value="0xC41899"/>
+        <option name="pointcolor" value="0xffffff"/>
+        <option name="pointopacity" value="1.0"/>
+        <option name="pointsize" value="3"/>
+      </renderer>
+    </plot>
+
+    <plot>
+      <horizontalaxis ref="Time">
+        <variable ref="Time"/>
+      </horizontalaxis>
+      <verticalaxis ref="°F">
+        <variable ref="Pcpn. Potential"/>
+      </verticalaxis>
+      <renderer type="pointline">
+        <option name="linecolor" value="0x0A38CF"/>
+        <option name="linewidth" value="3"/>
+        <option name="pointshape" value="circle"/>
+        <option name="pointoutlinewidth" value="2"/>
+        <option name="pointoutlinecolor" value="0x0A38CF"/>
+        <option name="pointcolor" value="0xffffff"/>
+        <option name="pointopacity" value="1.0"/>
+        <option name="pointsize" value="3"/>
+      </renderer>
+    </plot>
+
+    <plot>
+      <horizontalaxis ref="Time">
+        <variable ref="Time"/>
+      </horizontalaxis>
+      <verticalaxis ref="°F">
+        <variable ref="Rel. Humidity"/>
+      </verticalaxis>
+      <renderer type="pointline">
+        <option name="linecolor" value="0x25A15B"/>
+        <option name="linewidth" value="3"/>
+        <option name="pointshape" value="circle"/>
+        <option name="pointoutlinewidth" value="2"/>
+        <option name="pointoutlinecolor" value="0x25A15B"/>
+        <option name="pointcolor" value="0xffffff"/>
+        <option name="pointopacity" value="1.0"/>
+        <option name="pointsize" value="3"/>
+      </renderer>
+    </plot>
+
+    <data>
+      <variables>
+        <variable column="0" id="Time" type="datetime"/>
+        <variable column="1" id="Sky Cover"/>
+        <variable column="2" id="Pcpn. Potential"/>
+        <variable column="3" id="Rel. Humidity"/>
+      </variables>
+      <values>
+201304111200	59	11	52
+201304111300	60	16	50
+201304111400	72	25	53
+201304111500	85	33	56
+201304111600	98	35	60
+201304111700	100	37	63
+201304111800	100	56	66
+201304111900	100	98	69
+201304112000	100	99	73
+201304112100	100	98	77
+201304112200	100	100	82
+201304112300	100	100	85
+201304120000	100	100	89
+201304120100	100	100	92
+201304120200	99	96	93
+201304120300	99	92	94
+201304120400	98	86	93
+201304120500	83	67	94
+201304120600	67	49	95
+201304120700	60	40	93
+201304120800	56	34	79
+201304120900	53	28	71
+201304121000	49	22	64
+201304121100	37	17	55
+201304121200	26	11	48
+201304121300	14	6	42
+201304121400	16	6	40
+201304121500	18	7	38
+201304121600	20	7	36
+201304121700	16	7	37
+201304121800	11	7	42
+201304121900	7	7	47
+201304122000	10	7	53
+201304122100	12	7	60
+201304122200	15	7	65
+201304122300	17	7	68
+201304130000	20	7	72
+201304130100	22	7	77
+201304130200	28	7	81
+201304130300	34	7	83
+201304130400	40	7	86
+201304130500	34	7	87
+201304130600	29	7	87
+201304130700	23	7	77
+201304130800	21	7	62
+201304130900	18	6	51
+201304131000	16	6	43
+201304131100	14	6	37
+201304131200	11	5	33
+201304131300	9	5	30
+201304131400	10	5	29
+201304131500	11	6	29
+201304131600	12	6	29
+201304131700	13	6	31
+201304131800	14	7	36
+201304131900	15	7	41
+201304132000	15	7	47
+201304132100	16	7	53
+201304132200	16	7	59
+201304132300	16	7	62
+201304140000	17	7	67
+201304140100	17	7	73
+201304140200	17	7	78
+201304140300	18	8	82
+201304140400	18	8	88
+201304140500	18	8	88
+201304140600	19	9	89
+201304140700	19	9	77
+201304140800	23	10	63
+201304140900	28	10	53
+201304141000	32	11	46
+201304141100	36	11	41
+201304141200	41	12	38
+201304141300	45	12	36
+201304141400	48	12	35
+201304141500	51	13	36
+201304141600	54	13	37
+201304141700	56	14	40
+201304141800	59	14	45
+201304141900	62	15	51
+201304142000	63	15	57
+201304142100	64	16	61
+201304142200	65	16	65
+201304142300	65	17	68
+201304150000	66	18	71
+201304150100	67	18	76
+201304150200	66	19	81
+201304150300	65	19	85
+201304150400	65	20	91
+201304150500	64	20	92
+201304150600	63	21	94
+201304150700	63	22	86
+201304150800	64	23	75
+201304150900	65	24	66
+201304151000	66	25	59
+201304151100	68	26	54
+201304151200	69	27	51
+201304151300	70	27	49
+201304151400	70	28	48
+201304151500	69	29	47
+201304151600	69	30	48
+201304151700	69	31	50
+201304151800	69	32	55
+201304151900	69	31	60
+201304152000	68	31	66
+201304152100	67	30	72
+201304152200	67	30	77
+201304152300	66	29	80
+201304160000	66	29	84
+201304160100	65	28	90
+201304160200	65	27	94
+201304160300	65	27	96
+201304160400	66	26	100
+201304160500	66	26	100
+201304160600	66	25	100
+201304160700	66	25	90
+201304160800	66	26	79
+201304160900	65	26	69
+201304161000	64	26	62
+201304161100	64	27	58
+201304161200	63	27	54
+201304161300	62	27	52
+201304161400	60	28	51
+201304161500	58	28	51
+201304161600	56	27	51
+201304161700	54	26	53
+201304161800	51	26	59
+201304161900	49	25	66
+201304162000	50	24	72
+201304162100	50	23	78
+201304162200	51	22	83
+201304162300	52	22	86
+201304170000	52	21	90
+201304170100	53	20	94
+201304170200	56	21	99
+201304170300	58	21	100
+201304170400	61	22	100
+201304170500	64	23	100
+201304170600	66	23	100
+201304170700	69	24	94
+201304170800	68	25	82
+201304170900	66	25	72
+201304171000	65	26	64
+201304171100	64	27	59
+201304171200	63	27	54
+201304171300	61	28	51
+201304171400	63	28	49
+201304171500	64	28	49
+201304171600	65	28	49
+201304171700	66	28	50
+201304171800	67	29	54
+201304171900	68	29	59
+201304172000	69	29	64
+201304172100	70	29	69
+201304172200	70	29	73
+201304172300	71	29	76
+201304180000	72	29	79
+201304180100	72	29	83
+201304180200	72	30	86
+201304180300	72	30	89
+201304180400	72	30	92
+201304180500	72	30	92
+201304180600	72	30	92
+
+      </values>
+    </data>
+</mugl>

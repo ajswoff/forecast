@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asheville Forecast</title>
+    <style>
+      * {margin:0; padding:0;}
+      body {font-family:"Arial", Helvetica, sans-serif; padding-top:5px; padding-bottom:5px;}
+      a {font-family:"Arial", Helvetica, sans-serif}
+     .multigraph {font-family:"Courier New", Courier, monospace;}
+     #wrap {width:95%; margin: 0 auto;}
+    </style>
+    <script type="text/javascript" src="http://multigraph.github.com/download/multigraph-min.js"></script>
+  </head>
+
+  <body>
+    <div id=wrap>
+      <h1>Point Forecast: Asheville NC, April 11 - April 18</h1>
+      <br>
+      <h3>Weather Elements</h3>
+      <div class="multigraph" data-src="temp_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+      <div class="multigraph" data-src="wind_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+      <div class="multigraph" data-src="precip_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+      <div class="multigraph" data-src="typePrecip_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+      <br>
+      <h3>Aviation Weather</h3>
+	  <div class="multigraph" data-src="avi_ceilingHeight_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="avi_visibility_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="avi_thunder_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <br>
+	  <h3>Fire Weather</h3>
+	  <div class="multigraph" data-src="fire_mixingHeight_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_lightning_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_transportWind_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_20ftWind_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_ventilation_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_pressure_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_davis_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_atmosDispersion_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_lowVisibility_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+	  <div class="multigraph" data-src="fire_turner_forecast_asheville.xml" data-width="95%" data-height="250"/></div>
+
+
+    </div>
+  </body>
+</html>
